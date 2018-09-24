@@ -1,0 +1,60 @@
+@import '../helpers/_variables.scss';
+
+/* Start Footer */
+footer {
+	.row {
+		@media (min-width:769px ) and (max-width: 992px) { padding-bottom: 0 !important }
+	}
+
+	div {
+		@media #{$maxMedium} { text-align: center !important }
+
+		.third,
+		.forth {
+			@media (min-width:769px ) and (max-width: 992px) { padding-bottom: 0 !important }
+		}
+	}
+
+	.second {
+		ul {
+			li {
+				@media (min-width:769px ) and (max-width: 992px) { display: inline-block !important }
+			}
+		}
+	}
+
+	.forth {
+		ul {
+			li {
+				@media (min-width:769px) and (max-width: 992px) { margin: auto 1px 10% 7% }
+
+				i {
+					font-size: 22px;
+					@media (max-width: 992px) { display: block; margin-bottom: 7px }
+				}
+			}
+		}
+	}
+
+	.foot {
+		ul {
+			li {
+				@media (min-width:769px ) and (max-width: 992px) { margin: auto }
+			}
+		}
+	}
+
+    ul {
+        li {
+			@media (min-width:769px ) and (max-width: 992px) { display: block; margin: auto 10% 10% 6% }
+
+			a { 
+				@include prefixer(transition, all .3s ease-in-out, webkit moz o ms);
+				font-family: "../../fonts/font/4_67";
+				padding-bottom: 5px;
+				&:hover { border-bottom: 1px solid #fff }
+			}
+        }
+    }
+}
+/* End Footer */

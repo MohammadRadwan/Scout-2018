@@ -1,0 +1,51 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+/* Start BreadCrumb */
+
+.bread-crumb {
+    @include prefixer (background-size, cover, webkit moz o ms);
+    margin-top: 105px;
+    background: url("../../img/bread-crumb/5.jpg") no-repeat center center fixed;
+    min-height: 200px;
+    position: relative;
+    
+    @media (max-width: 1200px) { margin-top: 100px }
+
+    @media (max-width: 992px) { margin-top: 95px }
+
+    @media (max-width: 599px) { margin-top: 85px }
+
+    .overlay {
+        @include overlay;
+        background: rgba(#000, .8);
+        z-index: 1;
+
+        .container {
+            .row {
+                background: rgba(75,75,75,.5);
+                padding: 20px 0;
+
+                h1 {
+                    font-size: 2em;
+
+                    @media (max-width: 768px) { text-align: center; font-size: 1.8em }
+                 }
+            }
+
+            .breadcrumb {
+                margin-bottom: 0;
+                background: none;
+                direction: ltr;
+
+                a { @include prefixer (transition, all .5s ease-in-out, webkit moz o ms) }
+
+                span,a { font-size: 14px }
+
+                @media (max-width: 768px) { justify-content: center }
+            }
+        }
+    }
+}
+
+/* End BreadCrumb */

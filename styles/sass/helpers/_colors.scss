@@ -1,0 +1,120 @@
+
+/* Background Colors */
+header nav button,
+.interface .carousel ol li.active,
+header nav .navbar-toggler,
+.test .carousel .light-blue.darken-4,
+.test .carousel ol li.active,
+.interface .carousel .carousel-caption .buttons a,
+.interface .carousel .carousel-caption .buttons a:not(.active):hover,
+.subscribe
+{ background-color: #196E2F !important }
+
+.scroll { background-color: #00c633 !important }
+
+.test .carousel ol li,
+.slider { background: #eee !important }
+
+.about { background-color: #f7f6f6 !important }
+
+.stat .overlay { background: rgba(9, 9, 9, .5) }
+
+.navBack { background-color: #fff }
+
+.about-us .image .overlay { background: rgba(#000, .3);}
+
+.ceo { background-color: #eee }
+
+.ceo .manager .overlay,
+.leaders { background: rgba( #196E2F, .5) }
+
+.ceo .manager .info { background: rgba(#196E2F, .6) }
+
+.leaders .leader-box .leader-info .leader-social li { background: rgba(#196E2F, 1) }
+
+.news .info .overlay .date { background: rgba(#196E2F, .8) }
+
+header .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link, .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link { background-color: #000 }
+
+footer { background-color: #182531 }
+
+/* Color */
+header nav .collapse ul li.active,
+header nav .collapse ul li a.nav-link,
+header nav form i,
+.sidebar aside .first form i,
+.service .media i,
+.about span,
+a,
+header nav .navbar-brand span,
+header .form-control:focus,
+.contact .contact-icons li i,
+.about-us .content div i { color: #196E2F !important }
+
+form .md-form label.active,
+.stat .txt,
+.test .carousel .carousel-inner .media h6,
+.bread-crumb .overlay .container .breadcrumb span,
+.bread-crumb .overlay .container .breadcrumb a:hover,
+.news .info .content h5:hover,
+.news .info .content ul li span { color: #00c633 !important }
+
+.scroll,
+.interface .carousel .carousel-caption .buttons a,
+.bread-crumb .overlay .container .breadcrumb a,
+.breadcrumb-item+.breadcrumb-item::before,
+.bread-crumb .overlay .container,
+.facebook,
+.twitter,
+.google,
+.linkedin,
+.youtube,
+.ceo .manager .overlay .icons i,
+.leaders .leader-box .leader-info .leader-social li a i,
+.subscribe,
+.subscribe .sub a,
+.news .info .overlay .date,
+.ceo .manager .info,
+.stat .overlay,
+footer a  { color: #fff !important }
+
+ .about-us .content .third,
+ .news a { color: #6a6a6a }
+
+.slider .carousel .carousel-inner .card .card-body .extra span { color: #aaa }
+
+.test .carousel .carousel-inner .media p { color: #eee  }
+
+/* Box Shadow */
+input[type='text']:focus,
+input[type='number']:focus,
+textarea[type='text']:focus { box-shadow: 0 1px 0 0 #00c633  !important }
+
+/* Border */
+.service .media .media-body a,
+h2,
+form .md-form input[type='text']:focus,
+input[type='search']:focus,
+form .md-form textarea[type='text']:focus,
+form .md-form input[type='number']:focus { border-bottom: 1px solid #00c633 !important }
+
+.form-control:focus { border-color: #00c633 !important }
+
+.interface .carousel .carousel-caption .buttons a,
+.slider i { border: 1px solid #196E2F }
+
+.bord { border-left: 1px solid #fff }
+
+.news .sidebar .third li { border: 1px solid #aaa }
+
+li.active { border-bottom: 1px solid #000 }
+
+/* Start Hover */
+.about button:hover,
+.cards button:hover,
+.slider button:hover,
+.slider i:hover,
+.contact button:hover,
+.modal button:hover { background-color: #00c633 !important; color: #fff !important }
+
+a:hover { color: #000 }

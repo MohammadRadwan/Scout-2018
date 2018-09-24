@@ -1,0 +1,35 @@
+/* Body */
+body { font-family: myFirstFont !important }
+
+@font-face { font-family: myFirstFont; src: url(../../fonts/font/NotoKufiArabic-Regular.ttf) }
+
+/* End Body */
+
+ul, ol { list-style: none; padding: 0 }
+
+a { text-decoration: none; &:hover { text-decoration: none } }
+
+h3, h4 { margin: 10px 0 }
+
+button,
+.social .icons a i,
+.interface .carousel ol li { cursor: pointer }
+
+h3 { margin: 0 auto 30px }
+
+p { font-family: "../../fonts/font/4_67"; color: #727272; font-size: 18px }
+
+* i {
+  animation: heart-beat 1.5s infinite ease-in-out;
+  transition: .5s;
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+        transform: scale(.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}

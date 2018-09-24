@@ -1,0 +1,438 @@
+@import '../helpers/_variables';
+@import '../helpers/_mixins';
+
+/* Start Interface */
+
+.interface {
+    position: relative;
+    padding: 0;
+    margin-top: 35px;
+    padding-bottom: 0 !important;
+
+    @media #{$maxLarge} { margin-top: 35px }
+
+    .carousel ol {
+        @extend %direction-r;
+
+        li {
+            width: 18px;
+            height: 18px;
+
+            @media #{$maxMedium} { width: 16px; height: 16px }
+
+            @media #{$maxSmall} { width: 14px; height: 14px }
+
+            @media #{$maxExtraSmall} { display: none }
+        }
+    }
+
+    .carousel-inner { max-height: 600px }
+
+    .carousel .carousel-caption {
+        top: 30%;
+
+        @media #{$maxXXSmall} { display: none }
+
+        .buttons {
+            margin: 50px 0;
+
+            @media #{$maxSmall} { margin: 30px 0 }
+
+            @media #{$maxExtraSmall} { margin: 20px 0 }
+
+            @media #{$maxXXSmall} { margin: 10px 0 }
+
+            a {
+				@include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                padding: 17px 40px;
+                border-radius: 5%;
+                margin-left: 1rem;
+
+                @media #{$maxLarge} { padding: .9rem 2.3rem; font-size: 1rem }
+
+                @media #{$maxMedium} { padding: .9rem 2.1rem; font-size: .85rem }
+
+                @media #{$maxSmall} { padding: .8rem 1.9rem; font-size: .75rem }
+
+                @media #{$maxExtraSmall} { padding: .8rem 1.7rem; font-size: .65rem }
+
+                @media #{$maxXXSmall} { padding: .7rem 1.5rem; font-size: .55rem }
+            }
+
+            a:not(.active) { background: none !important }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 3;
+        opacity: 0.6;
+
+        span {
+            @media #{$maxMedium} { width: 2rem; height: 2rem }
+
+            @media #{$maxSmall} { width: 1.5rem; height: 1.5rem }
+        }
+    }
+}
+
+/* End Interface */
+
+/* Start Services */
+
+.service {
+    h2 {
+        @media #{$minLarge} { width: 170px !important }
+
+        @media #{$maxLarge} { width: 150px !important }
+
+        @media #{$maxMedium} { width: 130px !important }
+    }
+
+    .media {
+        i.icon {
+            @media #{$maxLarge} { font-size: 2.8em }
+
+            @media #{$maxMedium} { font-size: 2.6em }
+
+            @media #{$maxSmall} { font-size: 2.4em }
+
+            @media #{$maxExtraSmall} { font-size: 2.2em }
+        }
+
+        .media-body {
+            a {
+                padding-bottom: 5px;
+                font-size: 16px;
+
+                @media #{$maxLarge} { font-size: 15px !important }
+
+                @media #{$maxMedium} { font-size: 14px !important }
+
+                @media #{$maxSmall} { font-size: 13px !important }
+
+                @media #{$maxExtraSmall} { font-size: 12px !important }
+
+                &:hover { text-decoration: none }
+            }
+        }
+    }
+
+    .mb-5 {
+        margin-bottom: 4em !important;
+
+        @media #{$maxLarge} { margin-bottom: 3.7em !important }
+
+        @media #{$maxMedium} { margin-bottom: 3.3em !important }
+
+        @media #{$maxSmall} { margin-bottom: 3em !important }
+
+        @media #{$maxExtraSmall} { margin-bottom: 2.5em !important }
+    }
+}
+
+/* End Services */
+
+/* Start About */
+
+.about {
+    h3 {
+        @media #{$maxMedium} { margin-bottom: 20px }
+
+        span { letter-spacing: -1px }
+    }
+
+    p { line-height: 1.8 }
+
+    button {
+        width: 150px;
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 800;
+
+        @media #{$mixMeduim-Large} { margin-top: 20px; font-size: 17px; width: 140px }
+
+        @media #{$maxMedium} { margin-top: 10px; font-size: 16px; width: 130px }
+
+        @media #{$maxSmall} { font-size: 15px; width: 120px }
+
+        @media #{$maxExtraSmall} { font-size: 14px; width: 110px; padding: 8px }
+    }
+
+    img {
+        border-radius: 2%;
+
+        @media #{$maxMedium} { margin: 10px auto }
+    }
+
+    img.img-fluid {
+        @media #{$maxMedium} { max-width: 70% }
+    }
+}
+
+/* End About */
+
+/* Start Clients */
+
+.clients {
+    @media (max-width:397px) { .clients .col-4 { -webkit-flex: 0 0 50%; flex: 0 0 50%; max-width: 50% } }
+
+    h2:after { right: 47.4%; width: 80px }
+
+    p { margin-left: 20%; margin-right: 20% }
+
+    img {
+        max-width: 125px !important;
+        margin-bottom: 20px;
+
+        @media #{$maxMedium} { max-width: 110px !important }
+
+        @media #{$maxSmall} { max-width: 100px !important; margin-bottom: 15px }
+
+        @media #{$maxExtraSmall} { max-width: 90px !important }
+
+        @media #{$maxXXSmall} { max-width: 80px !important }
+    }
+}
+
+.cards p.lead { margin-left: 20%; margin-right: 20% }
+
+/* End Clients */
+
+/* Start Stat */
+
+.stat {
+    @include prefixer (background-size, cover, webkit moz o ms);
+    background: url("../../img/Stat/103.jpg") no-repeat center center fixed;
+    min-height: 200px;
+    padding: 0 !important;
+
+    .overlay { min-height: 200px; padding: 30px 0 }
+
+    .bord {
+        max-height: 100px;
+
+        @media #{$minLarge} { max-height: 95px }
+
+        @media #{$maxMedium} { max-height: 80px }
+    }
+
+    .count {
+        @media #{$minLarge} { font-size: 40px }
+
+        @media #{$maxLarge} { font-size: 35px  }
+
+        @media #{$maxMedium} { font-size: 30px; margin-top: 7px }
+
+        @media #{$maxSmall} { margin-top: 0 !important }
+    }
+
+    .txt {
+        @media #{$minMedium} { font-size: 18px!important }
+
+        @media #{$maxMedium} { font-size: 14px!important; margin-bottom: 0 !important }
+    }
+}
+
+/* End Stat */
+
+/* Start Slider */
+
+.slider {
+    .con1 {
+        .arrows {
+            @media #{$maxSmall} { width: 75%; margin: auto }
+        }
+    }
+
+    .con2 {
+        .row {
+            @media #{$maxSmall} { width: $w-80; margin: auto }
+
+            @media #{$maxExtraSmall} { width: 100% }
+        }
+    }
+
+    .carousel .carousel-inner {
+        @extend %direction-r;
+
+        @media #{$maxExtraSmall} { width: $w-80; margin: auto }
+
+        .carousel-item.active { display: inline-flex }
+
+        .card {
+            .view img {
+                @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+
+                @media #{$minMedium} { height: 200px }
+
+                @media #{$maxMedium} { height: 170px }
+
+                @media #{$maxSmall} { height: 250px }
+
+                @media #{$maxXXSmall} { height: 180px }
+            }
+
+            .view:hover img { -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2) }
+
+            .card-body {
+                .extra {
+                    @extend %direction-r;
+
+                    button {
+                        margin-left: 7em;
+
+                        @media #{$maxLarge} { margin-left: 3em }
+
+                        @media #{$maxMedium} { margin-left: 0em; margin-bottom: .7em }
+
+                        @media #{$maxSmall} { display: block }
+                    }
+                }
+            }
+        }
+    }
+
+    i {
+        @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+        border-radius: 15%;
+
+        @media #{$minMedium} { padding: 0px 20px; margin-left: 10px }
+
+        @media #{$maxMedium} { padding: 0px 15px; font-size: 1.8em }
+
+        @media #{$maxSmall} { font-size: 1.6em }
+    }
+}
+
+/* End Slider */
+
+/* Start Testimonials */
+
+.test {
+	@include prefixer (background-size, cover, webkit moz o ms);
+    background: url("../../img/testimonials-background.jpg") no-repeat center center fixed;
+    padding: 25px 0 30px !important;
+
+    @media #{$maxSmall} { padding-top: 5px !important }
+
+    .carousel {
+        .carousel-inner {
+            @extend %direction-r;
+
+            .carousel-item {
+                height: 138px;
+
+                .media {
+                    max-height: 300px;
+    
+                    @media #{$maxSmall} { display: inline-block; min-height: 250px !important }
+    
+                    @media #{$maxExtraSmall} { max-height: 300px !important }
+    
+                    .avatar {
+                        width: 100px;
+                        height: 100px;
+    
+                        img {
+                            margin-right: 0 !important;
+                            width: 100%;
+                            height: 100%;
+
+                            @media #{$maxSmall} { margin-right: 0 !important; max-width: 85px }
+                        }
+                    }
+    
+                    .media-body {
+                        @media #{$maxSmall} { margin-top: 25px; margin-right: 0 !important }
+                    }
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: -30px;
+            left: 20px;
+            justify-content: flex-end;
+            margin-left: 10px;
+
+            @media #{$maxSmall} {
+                justify-content: center;
+                margin: 0 auto 10px;
+                padding-right: 10px;
+                bottom: -20px
+            }
+
+            @media #{$maxExtraSmall} { bottom: -25px }
+        }
+    }
+}
+
+/* End Testimonials */
+
+/* Start Contact Us */
+
+.contact {
+    h2 { width: 150px }
+
+    .row {
+        @media #{$maxSmall} { margin-top: 0 !important }
+
+        .cos {
+            @media #{$maxXXSmall} { -webkit-flex: 0 0 95%; flex: 0 0 95%; max-width: 95% }
+        }
+    }
+
+    .fo {
+        @media #{$maxSmall} { margin-bottom: 1.5rem !important }
+    }
+
+    .map {
+        @media #{$maxSmall} { margin: 10px auto }
+
+        .map-container {
+            @media #{$maxExtraSmall} { height: 250px !important }
+
+            @media #{$maxXXSmall} { height: 200px !important; margin-bottom: 1em }
+        }
+    }
+
+    .info {
+        text-align: -webkit-left !important;
+
+        ul {
+            width: 50% !important;
+
+            @media #{$minMedium} { padding-right: 8% !important }
+
+            @media #{$maxSmall} { width: 100% !important }
+
+            li {
+                margin-left: 1em !important;
+
+                @media #{$maxSmall} { margin: 5% auto }
+
+                @media #{$maxXXSmall} { margin: 5px auto }
+
+                i.fa-mobile {
+                    font-size: 2.5em !important;
+
+                    @media #{$maxXXSmall} { font-size: 2em !important }
+                }
+
+                i.fa-envelope {
+                    @media #{$maxXXSmall} { font-size: 1.5em !important }
+                }
+
+                p {
+                    @media #{$maxSmall} { font-size: 14px !important }
+
+                    @media #{$maxExtraSmall} { font-size: 13px !important }
+                }
+            }
+        }
+    }
+}
+
+/* End Contact Us */

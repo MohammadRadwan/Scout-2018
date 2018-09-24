@@ -1,0 +1,62 @@
+@import '_variables';
+
+.text-center-xs { @media #{$maxExtraSmall} { text-align: center } }
+
+.text-center-sm { @media #{$maxSmall} { text-align: center !important } }
+
+.text-center-md { @media #{$maxMedium} { text-align: center } }
+
+.overflow { overflow: hidden }
+
+.mt-5 { margin-top: 2.5rem !important }
+
+.mb-3 { margin-bottom: 1.3rem !important }
+
+.list-unstyled { padding: 0 !important }
+
+.md-form { label { right: 0; left: auto } }
+
+.news .sidebar hr { background: $mainColor; height: .3px }
+
+header nav form .waves-effect { overflow: hidden !important;}
+
+.carousel .carousel-control-next-icon { background-image: url(../../img/svg/arrow_right.svg) }
+
+.carousel .carousel-control-prev-icon { background-image: url(../../img/svg/arrow_left.svg) }
+
+/* Start Extend Classes */
+
+// Placeholder Selector Sign we use it when we dont want to use this in html so no rendering in browser means better performance
+%flex {
+    -webkit-flex-basis: 40%;
+    -moz-flex-basis: 40%;
+    -ms-flex-basis: 40%;
+    flex-basis: 40%
+}
+
+%transition {
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out
+}
+
+%cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
+}
+
+%border-after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 75px;
+    background: $mainColor;
+    margin-top: 15px
+}
+
+%direction-r { direction: rtl }
+
+/* End Extend Classes */

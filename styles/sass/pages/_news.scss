@@ -1,0 +1,155 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+.news {
+    .info {
+        @media #{$maxSmall} { width: $w-80; margin: 5px auto }
+
+        .overlay {
+            img {
+                @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                height: 200px;
+
+                @media #{$minSmall} { height: 180px }
+
+                @media #{$minLarge} { height: 225px }
+            }
+
+            &:hover img { -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2) }
+
+            .date {
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                padding: 5px 10px;
+                height: auto;
+                border-radius: 10px;
+                z-index: 2;
+
+                @media #{$minSmall} { font-size: 15px }
+
+                @media #{$minLarge} { font-size: 16px }
+
+                @media #{$maxXSmall} { font-size: 14px }
+            }
+        }
+
+        .content {
+            h5 {
+                @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                line-height: 1.5;
+                cursor: pointer;
+
+                @media #{$minMedium} { font-size: 16px }
+
+                @media #{$maxMedium} { font-size: 15px }
+
+                @media #{$maxSmall} { font-size: 14px }
+            }
+
+            ul {
+                li { font-size: 13px }
+            }
+
+            p { font-size: 17px !important }
+        }
+    }
+
+    .sidebar {
+        @media #{$maxSmall} { width: $w-80; margin: 15px auto }
+
+        aside {
+            .first {
+                form {
+                    position: relative;
+                    margin-bottom: 25px;
+
+                    @media #{$maxSmall}{ width: $w-80; margin: 20px auto }
+
+                    input { max-width: 100%; padding: 10px }
+
+                    i {
+                        position: absolute;
+                        top: 12px;
+                        left: 10px;
+                        cursor: pointer
+                    }
+                }
+            }
+
+            .second {
+                .links {
+                    margin-top: 25px;
+
+                    .media {
+                        @media #{$maxMedium} {
+                            display: block;
+
+                            &:not(:first-of-type) { margin-top: 25px !important }
+                        }
+
+                        a {
+                            @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+
+                            &:hover img { -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2) }
+
+                            img {
+                                @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                                border-radius: 10px;
+                                width: 60px;
+
+                                @media #{$maxMedium} { margin: 5px auto; margin-left: auto !important }
+                            }
+                        }
+
+                        .media-body {
+                            font-size: 13px;
+                            margin-top: 5px;
+
+                            @media #{$maxMedium} { margin-top: 20px }
+
+                            a {
+                                h5 { font-size: 17px; margin-bottom: 10px }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .third {
+                .tags {
+                    ul {
+                        li {
+                            @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                            width: fit-content;
+                            display: inline-flex;
+                            padding: 5px 10px;
+                            margin-left: 5px;
+                            margin-bottom: 5px;
+
+                            &:hover { background: $subColor }
+
+                            &:hover a { color: $whiteColor !important }
+                        }
+                    }
+                }
+            }
+
+            .forth {
+                .dates {
+                    ul {
+                        li {
+                            &:hover a { color: $mainColor }
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 { margin-bottom: 0 !important; font-size: 24px !important }
+
+        hr {
+            @media #{$maxSmall} { width: $w-80; margin: 15px auto }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+/* Start Modal */
+.modal {
+    .modal-dialog {
+        @media #{$maxExtraSmall} { width: $w-80; margin: 30px auto }
+
+        .modal-content {
+            border-radius: 15px;
+
+            .modal-header { border-radius: 15px 15px 0 0 }
+
+            .modal-body { padding: .5em 1em }
+
+            .modal-footer {
+                border: 0;
+
+                @media #{$maxExtraSmall} { padding: 0 10px 10px }
+
+                .submit {
+                   button {
+                        width: 150px;
+                        padding: 15px 0;
+
+                        @media #{$maxExtraSmall} { width: 120px }
+                   }
+                }
+                
+                .info {
+                    margin-bottom: 20px;
+
+                    ul {
+                        @media #{$maxExtraSmall} { display: block !important }
+
+                        li {
+                            @media #{$maxExtraSmall} {
+                                display: block !important;
+                                margin-left: 0 !important;
+                                line-height: 2;
+                                margin-top: 15px
+                            }
+                    
+                            i.fa-mobile { font-size: 1.9em }
+
+                            i.fa-envelope { font-size: 1.5em }
+                            
+                            p { font-size: 16px !important; margin: 0 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Modal */

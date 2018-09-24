@@ -1,0 +1,168 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+/* Start About-Us */
+.about-us  {
+    h2 {
+        @media #{$minLarge} { width: 170px }
+
+        @media #{$maxLarge} { width: 160px }
+
+        @media #{$maxMedium} { width: 155px }
+
+        @media #{$maxSmall} { width: 145px }
+
+        @media #{$maxExtraSmall} { width: 135px }
+
+        @media #{$maxXXSmall} { width: 127px }
+    }
+
+    .image {
+        background: url("../../img/5.jpg") no-repeat center center fixed;
+        @include prefixer (background-size, cover, webkit moz o ms);
+        min-height: 400px;
+        margin-top: 50px;
+        position: relative;
+
+        .overlay { @include overlay; z-index: 1 }
+    }
+
+    .content {
+        div {
+            h4 { padding-top: 10px }
+        }
+
+        .third {
+            ul {
+                li { font-size: 17px !important; line-height: 2; font-family: "../../fonts/font/4_67" }
+            }
+        }
+
+        @media #{$maxSmall} {
+            div {
+                text-align: center;
+
+                i { float: none !important; margin-left: 0 !important }
+
+                p { margin-top: 15px !important }
+            }
+
+            div.third,
+            div.second { margin-top: 2em !important }
+        }
+    }
+}
+
+/* End About-Us */
+
+/* Start Ceo */
+
+.ceo {
+    h2 {
+        width: 205px;
+        padding-bottom: 10px;
+
+        @media #{$maxMedium} { width: 190px }
+
+        @media #{$maxSmall} { width: 180px }
+
+        @media #{$maxExtraSmall} { width: 170px }
+
+        @media #{$maxXXSmall} { width: 160px }
+    }
+
+    .manager {
+        position: relative;
+        height: 250px;
+        width: fit-content;
+        border-radius: 10px;
+        margin: auto auto 70px;
+        
+        &:hover .overlay { height: 100% !important }
+
+        @media #{$maxSmall}{ margin: 30px auto }
+
+        img { width: 250px }
+
+        .overlay {
+            @include overlay;
+            @include prefixer (transition, all .7s ease-in-out, webkit moz o ms);
+            height: 0 !important;
+            z-index: 1;
+
+            .icons {
+                @include prefixer (transform, translate(-50%, -90%), webkit moz o ms);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 80%;
+
+                i { margin-right: .5em; margin-left: .5em; font-size: 20px }
+            }
+        }
+
+        .info {
+            position: absolute;
+            padding: 10px;
+            right: 12px;
+            bottom: 0;
+            width: 90%;
+            margin: 10px auto 0;
+            z-index: 2;
+
+            h5 {
+                @media #{$maxMedium} { font-size: 1.1em }
+            }
+
+            span { font-size: 14px }
+        }
+    }
+}
+
+/* End Ceo */
+
+/* Start Leaders */
+
+.leaders {
+    h2 { width: 80px }
+
+    .row {
+        @media #{$minSmall} { margin-top: 70px }
+
+        @media #{$maxSmall} { &:not(:first-of-type) { margin-top: 0 } }
+
+        .leader-box {
+            @media #{$maxSmall} { margin-top: 40px }
+
+            img {
+                @include prefixer (filter, grayscale(100%), webkit moz o);
+                @include prefixer (transition, all .5s ease-in-out, webkit moz o);
+                border-radius: 10px;
+                width: 230px;
+                height: 230px;
+
+                &:hover { @include prefixer (filter, grayscale(0%), webkit moz o) }
+
+                @media (min-width: 769px) and (max-width: 991px) { max-width: 200px; max-height: 200px }
+            }
+
+            .leader-info {
+                line-height: 2.5;
+
+                .leader-social {
+                    li {
+                        @include prefixer (transition, all .5s ease-in-out, webkit moz o ms);
+                        border-radius: 50%;
+                        opacity: .8;
+                        width: 40px;
+                        cursor: pointer;
+                        
+                        &:hover { opacity: 1 }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Leaders */

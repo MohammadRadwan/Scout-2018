@@ -1,0 +1,49 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+.spinner {
+    height: 500px;
+    background: #aaa;
+    position: relative;
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: $mainColor;
+        @include prefixer(animation, spinner 1s infinite linear, webkit moz o);
+    }
+
+    .one {  
+        @include prefixer(animation-duration, .85s, webkit moz o);
+        width: 50px;
+        height: 50px;
+        left: 50%;
+        top: 34%;
+    }
+
+    .two {  
+        @include prefixer(animation-duration, .95s, webkit moz o);
+        width: 75px;
+        height: 75px;
+        left: 49%;
+        top: 31%;
+    }
+
+    .three {    
+        @include prefixer(animation-duration, 1.05s, webkit moz o);
+        width: 100px;
+        height: 100px;
+        left: 48%;
+        top: 29%;
+    }
+}
+
+@keyframes spinner {
+    from {
+        @include prefixer(transform, rotate(0deg), webkit moz o);
+    }
+    to {
+        @include prefixer(transform, rotate(360deg), webkit moz o);
+    }
+}

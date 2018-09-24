@@ -1,0 +1,103 @@
+
+@media (min-width: 1200px) {
+
+	section { padding: 70px 0 !important }
+
+	h2,h3 { font-size: 1.9em !important }
+
+	h2 { width: 110px; margin: 0 auto 50px; padding-bottom: 5px }
+
+	h4 { font-size: 1.6em !important }
+
+	p { font-size: 18px !important }
+
+	.about p,
+	.clients p,
+	.cards p { font-size: 20px !important }
+}
+
+@media (max-width: 1199px) {
+
+	section { padding: 65px 0 !important }
+
+	h2,h3 { font-size: 1.9em !important }
+
+	h2 { width: 100px; margin: 0 auto 45px; padding-bottom: 5px }
+
+	h4 { font-size: 1.6em !important }
+
+	p { font-size: 17px !important }
+
+	.about p,
+	.clients p,
+	.cards p { font-size: 19px !important }
+}
+
+@media (max-width: 991px) {
+
+	section { padding: 60px 0 !important }
+
+	h2,h3 { font-size: 1.8em !important }
+
+	h2 { width: 100px; margin: 0 auto 40px }
+
+	h4 { font-size: 1.5em !important }
+
+	p { font-size: 16px !important }
+
+	.about p,
+	.clients p,
+	.cards p { font-size: 18px !important }
+}
+
+@media (max-width: 767px) {
+
+	section { padding: 55px 0 !important }
+
+	h2,h3 { font-size: 1.7em !important }
+
+	h2 { margin: 0 auto 35px }
+
+	h4 { font-size: 1.4em !important }
+
+	p { font-size: 17px !important }
+
+	.about p,
+	.clients p,
+	.cards p { font-size: 17px !important }
+}
+
+@media (max-width: 576px) {
+
+	section { padding: 50px 0 !important }
+
+	h2,h3 { font-size: 1.6em !important }
+
+	h2 { margin: 0 auto 30px }
+
+	h4 { font-size: 1.3em !important }
+
+	.about p,
+	.clients p,
+	.cards p { font-size: 16px !important }
+}
+
+@media (max-width: 481px) {
+
+	section { padding: 45px 0 !important }
+
+	h2,h3 { font-size: 1.5em !important }
+}
+
+p { line-height: 1.8 !important }
+
+
+@media screen and (max-width: 800px) {
+    .fadeInRight, .fadeInDown, .fadeInUp, .fadeInLeft {
+        animation-name: none !important;
+		visibility: visible !important;
+		transition: none !important;
+    }
+}
+
+
