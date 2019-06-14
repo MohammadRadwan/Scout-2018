@@ -20,5 +20,3 @@ Its a Multi-pages Template for "Scout Group" Located In Jordan, Marj-Alhamam.
 6. Smooth Animation.
 
 7. Nice Sliders.
-
-## Please Open The Dist Folder To See The Template. 
