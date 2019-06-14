@@ -1,4 +1,4 @@
-# Scout                                                                                          Date-Created 2018
+# Scout
 Its a Multi-pages Template for "Scout Group" Located In Jordan, Marj-Alhamam.
 
 ## Technologies Used:
