@@ -322,8 +322,7 @@
             @extend %direction-r;
 
             .carousel-item {
-                height: 138px;
-
+                @media #{$minMedium} { height: 138px; }
                 .media {
                     max-height: 300px;
     

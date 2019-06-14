@@ -8,7 +8,7 @@
     left: 0;
     z-index: 2;
     display: none;
-
+    @media #{$maxExtraSmall} { display: none !important; }
     a {
         @include prefixer(transition, all .3s ease-in-out, webkit moz o ms);
         font-size: 20px;

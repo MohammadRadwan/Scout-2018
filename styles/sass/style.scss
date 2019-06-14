@@ -9,6 +9,8 @@
 
 @import 'components/_growl';
 
+@import 'components/_breadcrumb';
+
 @import 'components/_side-scroll';
 
 @import 'components/_scroll';
@@ -21,6 +23,12 @@
 
 @import 'layout/_header';
 
+@import 'layout/_subscribe';
+
 @import 'pages/_index';
+
+@import 'pages/_news';
+
+@import 'pages/_about';
 
 @import 'layout/_footer';

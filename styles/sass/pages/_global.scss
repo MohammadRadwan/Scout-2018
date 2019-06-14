@@ -1,7 +1,7 @@
 /* Body */
 body { font-family: myFirstFont !important }
 
-@font-face { font-family: myFirstFont; src: url(../../fonts/font/NotoKufiArabic-Regular.ttf) }
+@font-face { font-family: myFirstFont; src: url("fonts/NotoKufiArabic-Regular.ttf"); }
 
 /* End Body */
 
@@ -17,7 +17,7 @@ button,
 
 h3 { margin: 0 auto 30px }
 
-p { font-family: "../../fonts/font/4_67"; color: #727272; font-size: 18px }
+p { font-family: "fonts/4_67.ttf"; color: #727272; font-size: 18px }
 
 * i {
   animation: heart-beat 1.5s infinite ease-in-out;
