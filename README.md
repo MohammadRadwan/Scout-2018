@@ -1,5 +1,5 @@
 # Scout
-Its a Multi-pages Template for "Scout Group" Located In Jordan, Marj-Alhamam.
+Its a Multi-pages Template for 'Scout Group' Located In Jordan, Marj-Alhamam.
 
 ## Technologies Used:
 
